@@ -35,12 +35,14 @@ void test_Lista_Puntero(){
     lista_puntero.print();
     lista_puntero.delete_Front();
     lista_puntero.print();
+    cout << "Pos 1: " << lista_puntero.retrieve_Position(1) << endl;
     lista_puntero.delete_Position(1);
     lista_puntero.print();
     lista_puntero.delete_Position(0);
     lista_puntero.print();
     lista_puntero.delete_Position(0);
     lista_puntero.print();
+    cout << "Pos 12: " << lista_puntero.retrieve_Position(3) << endl;
     cout << "¿Está?: " << lista_puntero.find(4) << endl;
 }
 

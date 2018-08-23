@@ -28,6 +28,7 @@ public:
     void insert_Back(T data);
     void insert_Position(unsigned long pos,T data);
     void replace_Position(unsigned long pos, T data);
+    T    retrieve_Position(unsigned long pos);
     void delete_Front();
     void delete_Back();
     void delete_Position(unsigned long pos);
@@ -119,11 +120,28 @@ void List_Pointer<T>::replace_Position(unsigned long pos, T data){
     Node<T> * it        = m_pHead;
     unsigned long count = 0;
     while(it != NULL){
-        if(count == pos)
+        if(count == pos){
             it->m_data = data;
+            break;
+        }
         it = it->m_pNext;
         ++count;
     }
+}
+
+template <class T>
+T List_Pointer<T>::retrieve_Position(unsigned long pos){
+    Node<T> * it        = m_pHead;
+    unsigned long count = 0;
+    while(it != NULL){
+        if(count == pos){
+            return it->m_data;
+            break;
+        }
+        it = it->m_pNext;
+        ++count;
+    }
+    return NULL;
 }
 
 template <class T>
