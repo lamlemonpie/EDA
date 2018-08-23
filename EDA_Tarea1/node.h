@@ -16,9 +16,13 @@ using namespace std;
 template <class T>
 class Node {
 public:
-    T data;
+    T m_data;
     Node * m_pNext;
     Node(){
+        m_pNext = NULL;
+    }
+    Node(T data){
+        m_data = data;
         m_pNext = NULL;
     }
     

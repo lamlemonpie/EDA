@@ -9,5 +9,70 @@
 #ifndef queue_pointer_h
 #define queue_pointer_h
 
+#include <iostream>
+#include "node.h"
+
+using namespace std;
+
+template <class T>
+class Queue {
+    Node<T> * m_pHead, * m_pTail;
+public:
+    Queue(){
+        m_pHead = m_pTail = NULL;
+    }
+    
+    void print();
+    bool isEmpty();
+    void push(T data);
+    T pop();
+    T front();
+    
+};
+
+template <class T>
+void Queue<T>::print(){
+    Node<T> * it = m_pHead;
+    //cout << "IMPRIMIENDO COLA" << endl;
+    while(it != NULL){
+        cout << " - " << it -> m_data;
+        it = it -> m_pNext;
+    }
+    cout << " - " << endl;
+}
+
+template <class T>
+bool Queue<T>::isEmpty(){
+    if(m_pHead)
+        return false;
+    return true;
+}
+
+template <class T>
+void Queue<T>::push(T data){
+    Node<T> * new_tmp = new Node<T>(data);
+    if(m_pHead != NULL) m_pTail->m_pNext = new_tmp;
+    else                m_pHead = new_tmp;
+    m_pTail = new_tmp;
+}
+
+template <class T>
+T Queue<T>::pop(){
+    if(m_pHead != NULL){
+        Node<T> * tmp = m_pHead;
+        m_pHead       = m_pHead->m_pNext;
+        T val         = tmp->m_data;
+        delete tmp;
+        return val;
+    }
+    return NULL;
+}
+
+template <class T>
+T Queue<T>::front(){
+    if(m_pHead != NULL)
+        return m_pHead -> m_data;
+    return NULL;
+}
 
 #endif /* queue_pointer_h */
