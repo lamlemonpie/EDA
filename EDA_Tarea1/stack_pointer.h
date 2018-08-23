@@ -15,10 +15,10 @@
 using namespace std;
 
 template <class T>
-class Stack {
+class Stack_Pointer {
     Node<T> * m_pTop;
 public:
-    Stack(){
+    Stack_Pointer(){
         m_pTop = NULL;
     }
     
@@ -30,7 +30,7 @@ public:
 };
 
 template <class T>
-void Stack<T>::print(){
+void Stack_Pointer<T>::print(){
     Node<T> * it = m_pTop;
     //cout << "IMPRIMIENDO COLA" << endl;
     while(it != NULL){
@@ -41,14 +41,14 @@ void Stack<T>::print(){
 }
 
 template <class T>
-bool Stack<T>::isEmpty(){
+bool Stack_Pointer<T>::isEmpty(){
     if(m_pTop)
         return false;
     return true;
 }
 
 template <class T>
-void Stack<T>::push(T data){
+void Stack_Pointer<T>::push(T data){
     Node<T> *new_tmp = new Node<T>(data);
     if(m_pTop ==NULL){
         m_pTop = new_tmp;
@@ -60,7 +60,7 @@ void Stack<T>::push(T data){
 }
 
 template <class T>
-T Stack<T>::pop()
+T Stack_Pointer<T>::pop()
 {
     if(m_pTop != NULL){
         Node<T> *tmp = m_pTop;
@@ -73,7 +73,7 @@ T Stack<T>::pop()
 }
 
 template <class T>
-T Stack<T>::top()
+T Stack_Pointer<T>::top()
 {
     return m_pTop->m_data;
 }

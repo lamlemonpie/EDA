@@ -15,10 +15,10 @@
 using namespace std;
 
 template <class T>
-class Queue {
+class Queue_Pointer {
     Node<T> * m_pHead, * m_pTail;
 public:
-    Queue(){
+    Queue_Pointer(){
         m_pHead = m_pTail = NULL;
     }
     
@@ -31,7 +31,7 @@ public:
 };
 
 template <class T>
-void Queue<T>::print(){
+void Queue_Pointer<T>::print(){
     Node<T> * it = m_pHead;
     //cout << "IMPRIMIENDO COLA" << endl;
     while(it != NULL){
@@ -42,14 +42,14 @@ void Queue<T>::print(){
 }
 
 template <class T>
-bool Queue<T>::isEmpty(){
+bool Queue_Pointer<T>::isEmpty(){
     if(m_pHead)
         return false;
     return true;
 }
 
 template <class T>
-void Queue<T>::push(T data){
+void Queue_Pointer<T>::push(T data){
     Node<T> * new_tmp = new Node<T>(data);
     if(m_pHead != NULL) m_pTail->m_pNext = new_tmp;
     else                m_pHead = new_tmp;
@@ -57,7 +57,7 @@ void Queue<T>::push(T data){
 }
 
 template <class T>
-T Queue<T>::pop(){
+T Queue_Pointer<T>::pop(){
     if(m_pHead != NULL){
         Node<T> * tmp = m_pHead;
         m_pHead       = m_pHead->m_pNext;
@@ -69,7 +69,7 @@ T Queue<T>::pop(){
 }
 
 template <class T>
-T Queue<T>::front(){
+T Queue_Pointer<T>::front(){
     if(m_pHead != NULL)
         return m_pHead -> m_data;
     return NULL;

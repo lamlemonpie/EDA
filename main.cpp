@@ -29,6 +29,8 @@ void test_Lista_Puntero(){
     lista_puntero.print();
     lista_puntero.insert_Position(2, 2.4);
     lista_puntero.print();
+    lista_puntero.replace_Position(1, 1.89);
+    lista_puntero.print();
     lista_puntero.delete_Back();
     lista_puntero.print();
     lista_puntero.delete_Front();
@@ -44,7 +46,7 @@ void test_Lista_Puntero(){
 
 void test_Cola_Puntero(){
     cout << "COLA PUNTERO" << endl;
-    Queue<float> cola_puntero;
+    Queue_Pointer<float> cola_puntero;
     cola_puntero.push(12);
     cola_puntero.print();
     cola_puntero.push(15);
@@ -63,7 +65,7 @@ void test_Cola_Puntero(){
 
 void test_Pila_Puntero(){
     cout << "PILA PUNTERO" << endl;
-    Stack<float> pila_puntero;
+    Stack_Pointer<float> pila_puntero;
     pila_puntero.push(5);
     pila_puntero.print();
     pila_puntero.push(10);
@@ -82,7 +84,7 @@ int main(int argc, const char * argv[]) {
     
     //test_Lista_Puntero();
     //test_Cola_Puntero();
-    test_Pila_Puntero();
+    //test_Pila_Puntero();
     
     return 0;
 }
