@@ -18,17 +18,26 @@ template <class T>
 class Queue_Pointer {
     Node<T> * m_pHead, * m_pTail;
 public:
-    Queue_Pointer(){
-        m_pHead = m_pTail = NULL;
-    }
+    Queue_Pointer();
+    ~Queue_Pointer();
     
     void print();
     bool isEmpty();
     void push(T data);
-    T pop();
-    T front();
+    T    pop();
+    T    front();
     
 };
+
+template <class T>
+Queue_Pointer<T>::Queue_Pointer(){
+    m_pHead = m_pTail = NULL;
+}
+
+template <class T>
+Queue_Pointer<T>::~Queue_Pointer(){
+    cout << "COLA ELIMINADA" << endl;
+}
 
 template <class T>
 void Queue_Pointer<T>::print(){

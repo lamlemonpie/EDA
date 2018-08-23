@@ -26,11 +26,11 @@
 		136C8E61212917D100211DCD /* EDA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EDA; sourceTree = BUILT_PRODUCTS_DIR; };
 		136C8E64212917D100211DCD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		136C8E6B212917E600211DCD /* list_pointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list_pointer.h; sourceTree = "<group>"; };
-		136C8E6C212917EC00211DCD /* list_vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list_vector.h; sourceTree = "<group>"; };
+		136C8E6C212917EC00211DCD /* list_array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list_array.h; sourceTree = "<group>"; };
 		136C8E6D212917F900211DCD /* stack_pointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack_pointer.h; sourceTree = "<group>"; };
-		136C8E6E212917FF00211DCD /* stack_vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack_vector.h; sourceTree = "<group>"; };
+		136C8E6E212917FF00211DCD /* stack_array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stack_array.h; sourceTree = "<group>"; };
 		136C8E6F2129180900211DCD /* queue_pointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue_pointer.h; sourceTree = "<group>"; };
-		136C8E702129181300211DCD /* queue_vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue_vector.h; sourceTree = "<group>"; };
+		136C8E702129181300211DCD /* queue_array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue_array.h; sourceTree = "<group>"; };
 		136C8E712129191C00211DCD /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,10 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132A4932212EABD100219A54 /* EDA_Lab1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EDA_Lab1;
+			sourceTree = "<group>";
+		};
 		136C8E58212917D100211DCD = {
 			isa = PBXGroup;
 			children = (
 				136C8E64212917D100211DCD /* main.cpp */,
+				132A4932212EABD100219A54 /* EDA_Lab1 */,
 				136C8E63212917D100211DCD /* EDA_Tarea1 */,
 				136C8E62212917D100211DCD /* Products */,
 			);
@@ -66,11 +74,11 @@
 			isa = PBXGroup;
 			children = (
 				136C8E6B212917E600211DCD /* list_pointer.h */,
-				136C8E6C212917EC00211DCD /* list_vector.h */,
+				136C8E6C212917EC00211DCD /* list_array.h */,
 				136C8E6D212917F900211DCD /* stack_pointer.h */,
-				136C8E6E212917FF00211DCD /* stack_vector.h */,
+				136C8E6E212917FF00211DCD /* stack_array.h */,
 				136C8E6F2129180900211DCD /* queue_pointer.h */,
-				136C8E702129181300211DCD /* queue_vector.h */,
+				136C8E702129181300211DCD /* queue_array.h */,
 				136C8E712129191C00211DCD /* node.h */,
 			);
 			path = EDA_Tarea1;

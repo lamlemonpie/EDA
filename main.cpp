@@ -11,7 +11,9 @@
 #include "list_pointer.h"
 #include "stack_pointer.h"
 #include "queue_pointer.h"
-
+#include "list_array.h"
+#include "stack_array.h"
+#include "queue_array.h"
 
 using namespace std;
 
@@ -80,6 +82,48 @@ void test_Pila_Puntero(){
     pila_puntero.print();
 }
 
+void test_Lista_Array(){
+    List_Array<float> lista_array;
+    lista_array.insert_Front(2);
+    lista_array.print();
+    lista_array.insert_Back(3);
+    lista_array.print();
+    lista_array.insert_Front(1);
+    lista_array.print();
+    cout << "Está?: " << lista_array.find(3) << endl;
+    lista_array.delete_Position(1);
+    lista_array.print();
+    lista_array.insert_Position(1, 1.5);
+    lista_array.print();
+}
+
+void test_Cola_Array(){
+    cout << "COLA ARRAY" << endl;
+    Queue_Array<float> cola_array;
+    for(int i=0; i<15; i++){
+        cola_array.push(i);
+        cola_array.print();
+    }
+    for(int j=14; j>-1; j--){
+        cola_array.pop();
+        cola_array.print();
+    }
+}
+
+void test_Pila_Array(){
+    cout << "PILA ARRAY" << endl;
+    Stack_Array<float> pila_array;
+    for(int i=0; i<15; i++){
+        pila_array.push(i);
+        pila_array.print();
+    }
+    for(int j=14; j>-1; j--){
+        pila_array.pop();
+        pila_array.print();
+    }
+}
+
+
 int main(int argc, const char * argv[]) {
     
     cout << "ESTRUCTURAS DE DATOS" << endl;
@@ -87,6 +131,10 @@ int main(int argc, const char * argv[]) {
     //test_Lista_Puntero();
     //test_Cola_Puntero();
     //test_Pila_Puntero();
+
+    //test_Lista_Array();
+    //test_Cola_Array();
+    //test_Pila_Array();
     
     return 0;
 }

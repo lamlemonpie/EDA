@@ -18,16 +18,25 @@ template <class T>
 class Stack_Pointer {
     Node<T> * m_pTop;
 public:
-    Stack_Pointer(){
-        m_pTop = NULL;
-    }
+    Stack_Pointer();
+    ~Stack_Pointer();
     
     void print();
     bool isEmpty();
     void push(T data);
-    T pop();
-    T top();
+    T    pop();
+    T    top();
 };
+
+template < class T>
+Stack_Pointer<T>::Stack_Pointer(){
+    m_pTop = NULL;
+}
+
+template < class T>
+Stack_Pointer<T>::~Stack_Pointer(){
+    cout << "PILA ELIMINADA" << endl;
+}
 
 template <class T>
 void Stack_Pointer<T>::print(){
