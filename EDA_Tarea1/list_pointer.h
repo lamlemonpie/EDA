@@ -11,6 +11,7 @@
 
 
 #include <iostream>
+#include <stdexcept>
 #include "node.h"
 
 using namespace std;
@@ -18,30 +19,61 @@ using namespace std;
 template <class T>
 class List_Pointer {
     Node<T> * m_pHead, * m_pTail;
+    size_t m_size;
 public:
     List_Pointer();
+    List_Pointer(size_t size);
     ~List_Pointer();
     
-    void print();
-    bool find(T data);
-    void insert_Front(T data);
-    void insert_Back(T data);
-    void insert_Position(unsigned long pos,T data);
-    void replace_Position(unsigned long pos, T data);
-    T    retrieve_Position(unsigned long pos);
-    void delete_Front();
-    void delete_Back();
-    void delete_Position(unsigned long pos);
+    T&     operator [] (size_t pos);
+    void   print();
+    size_t size();
+    bool   find(T data);
+    void   clear();
+    void   insert_Front(T data);
+    void   insert_Back(T data);
+    void   insert_Position(unsigned long pos,T data);
+    void   replace_Position(unsigned long pos, T data);
+    T      retrieve_Position(unsigned long pos);
+    void   delete_Front();
+    void   delete_Back();
+    void   delete_Position(unsigned long pos);
+    T      max();
 };
+
 
 template<class T>
 List_Pointer<T>::List_Pointer(){
     m_pHead = m_pTail = NULL;
+    m_size = 0;
+}
+
+template<class T>
+List_Pointer<T>::List_Pointer(size_t size){
+    m_pHead = m_pTail = NULL;
+    for (size_t i = 0; i<size; i++)
+        insert_Back(NULL);
+    m_size = size;
 }
 
 template<class T>
 List_Pointer<T>::~List_Pointer(){
     cout << "LISTA ELIMINADA" << endl;
+}
+
+template<class T>
+T& List_Pointer<T>::operator[](size_t pos){
+    Node<T> * it = m_pHead;
+    if(pos < 0 || pos > m_size)
+        throw std::runtime_error("Index out of range");
+    size_t tmp = 0;
+    while(it != NULL){
+        if(tmp == pos)
+            return it -> m_data;
+        it = it -> m_pNext;
+        tmp++;
+    }
+    return it->m_data;
 }
 
 template <class T>
@@ -56,6 +88,11 @@ void List_Pointer<T>::print(){
 }
 
 template <class T>
+size_t List_Pointer<T>::size(){
+    return m_size;
+}
+
+template <class T>
 bool List_Pointer<T>::find(T data){
     Node<T> * it = m_pHead;
     while(it != NULL){
@@ -63,6 +100,13 @@ bool List_Pointer<T>::find(T data){
         it = it->m_pNext;
     }
     return false;
+}
+
+
+template <class T>
+void List_Pointer<T>::clear(){
+    while(m_size > 0)
+        delete_Front();
 }
 
 //Si está vacío, el nuevo será cabeza y cola
@@ -80,6 +124,7 @@ void List_Pointer<T>::insert_Front(T data){
         new_tmp->m_pNext = m_pHead;
         m_pHead          = new_tmp;
     }
+    m_size++;
 }
 
 template <class T>
@@ -93,6 +138,7 @@ void List_Pointer<T>::insert_Back(T data){
         m_pTail->m_pNext = new_tmp;
         m_pTail          = new_tmp;
     }
+    m_size++;
 }
 
 template <class T>
@@ -113,6 +159,7 @@ void List_Pointer<T>::insert_Position(unsigned long pos, T data){
         it           = it->m_pNext;
         ++count;
     }
+    m_size++;
 }
 
 template <class T>
@@ -150,6 +197,7 @@ void List_Pointer<T>::delete_Front(){
     if(m_pHead == m_pTail) m_pTail = m_pHead->m_pNext;
     m_pHead = m_pHead->m_pNext;
     delete tmp;
+    m_size--;
 }
 
 template <class T>
@@ -169,6 +217,7 @@ void List_Pointer<T>::delete_Back(){
         m_pTail = it->m_pNext;
     }
     delete it;
+    m_size--;
 }
 
 template <class T>
@@ -188,6 +237,18 @@ void List_Pointer<T>::delete_Position(unsigned long pos){
         it          = it->m_pNext;
         ++count;
     }
+    m_size--;
+}
+
+template <class T>
+T List_Pointer<T>::max(){
+    Node<T> * it = m_pHead;
+    T max        = it -> m_data;
+    while(it != NULL){
+        if(it -> m_data > max) max = it -> m_data;
+        it = it -> m_pNext;
+    }
+    return max;
 }
 
 #endif /* list_pointer_h */

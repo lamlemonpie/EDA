@@ -28,7 +28,6 @@ public:
     void push(T data);
     T    pop();
     T    front();
-    
 };
 
 template <class T>
