@@ -2,7 +2,7 @@
 //  test_Lab2.h
 //  EDA
 //
-//  Created by Alejandro Larraondo on 9/4/18.
+//  Created by Alejandro Larraondo on 9/3/18.
 //  Copyright © 2018 Alejandro Larraondo. All rights reserved.
 //
 
@@ -10,17 +10,15 @@
 #define test_Lab2_h
 
 #include <iostream>
-#include "binary_tree.h"
-
-using namespace std;
+#include "radix_sort.h"
 
 
-void test_Binary_Tree(){
-    Binary_Tree<int> tree;
-    tree.Add(10);
-    tree.Add(4);
-    tree.Add(7);
-    
+void test_Radix(vector<int> &a){
+    radix(a);
+}
+
+void test_RadixList(List_Pointer<int> &a){
+    radix_linkedList(a);
 }
 
 #endif /* test_Lab2_h */

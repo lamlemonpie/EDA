@@ -33,11 +33,14 @@
 		136C8E702129181300211DCD /* queue_array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue_array.h; sourceTree = "<group>"; };
 		136C8E712129191C00211DCD /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
 		13A61F73213D954900C05C4E /* radix_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = radix_sort.h; sourceTree = "<group>"; };
-		13A61F74213DD45400C05C4E /* test_Tarea1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Tarea1.h; sourceTree = "<group>"; };
-		13A61F75213DD4DC00C05C4E /* test_Lab1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab1.h; sourceTree = "<group>"; };
-		13AA22E5213F2CC0008DAE8C /* test_Lab2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab2.h; sourceTree = "<group>"; };
-		13AA22E6213F3084008DAE8C /* binary_tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = binary_tree.h; sourceTree = "<group>"; };
-		13AA22E7213F3444008DAE8C /* node_binary_tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node_binary_tree.h; sourceTree = "<group>"; };
+		13A61F74213DD45400C05C4E /* test_Lab1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab1.h; sourceTree = "<group>"; };
+		13A61F75213DD4DC00C05C4E /* test_Lab2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab2.h; sourceTree = "<group>"; };
+		13AA22E5213F2CC0008DAE8C /* test_Lab3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab3.h; sourceTree = "<group>"; };
+		13AA22E6213F3084008DAE8C /* bTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bTree.h; sourceTree = "<group>"; };
+		13AA22E7213F3444008DAE8C /* bNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bNode.h; sourceTree = "<group>"; };
+		13CBBF9D21470AC900B40CA9 /* nNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nNode.h; sourceTree = "<group>"; };
+		13CBBF9F21471E1800B40CA9 /* nTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nTree.h; sourceTree = "<group>"; };
+		13CBBFA021474FD700B40CA9 /* postToTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = postToTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,22 +54,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		132A4932212EABD100219A54 /* EDA_Lab1 */ = {
+		132A4932212EABD100219A54 /* EDA_Lab2 */ = {
 			isa = PBXGroup;
 			children = (
 				13A61F73213D954900C05C4E /* radix_sort.h */,
-				13A61F75213DD4DC00C05C4E /* test_Lab1.h */,
+				13A61F75213DD4DC00C05C4E /* test_Lab2.h */,
 			);
-			path = EDA_Lab1;
+			path = EDA_Lab2;
 			sourceTree = "<group>";
 		};
 		136C8E58212917D100211DCD = {
 			isa = PBXGroup;
 			children = (
 				136C8E64212917D100211DCD /* main.cpp */,
-				132A4932212EABD100219A54 /* EDA_Lab1 */,
-				13AA22E4213F2CA7008DAE8C /* EDA_Lab2 */,
-				136C8E63212917D100211DCD /* EDA_Tarea1 */,
+				136C8E63212917D100211DCD /* EDA_Lab1 */,
+				132A4932212EABD100219A54 /* EDA_Lab2 */,
+				13AA22E4213F2CA7008DAE8C /* EDA_Lab3 */,
 				136C8E62212917D100211DCD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,29 +82,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		136C8E63212917D100211DCD /* EDA_Tarea1 */ = {
+		136C8E63212917D100211DCD /* EDA_Lab1 */ = {
 			isa = PBXGroup;
 			children = (
 				136C8E6B212917E600211DCD /* list_pointer.h */,
+				136C8E712129191C00211DCD /* node.h */,
 				136C8E6C212917EC00211DCD /* list_array.h */,
 				136C8E6D212917F900211DCD /* stack_pointer.h */,
 				136C8E6E212917FF00211DCD /* stack_array.h */,
 				136C8E6F2129180900211DCD /* queue_pointer.h */,
 				136C8E702129181300211DCD /* queue_array.h */,
-				136C8E712129191C00211DCD /* node.h */,
-				13A61F74213DD45400C05C4E /* test_Tarea1.h */,
+				13A61F74213DD45400C05C4E /* test_Lab1.h */,
 			);
-			path = EDA_Tarea1;
+			path = EDA_Lab1;
 			sourceTree = "<group>";
 		};
-		13AA22E4213F2CA7008DAE8C /* EDA_Lab2 */ = {
+		13AA22E4213F2CA7008DAE8C /* EDA_Lab3 */ = {
 			isa = PBXGroup;
 			children = (
-				13AA22E7213F3444008DAE8C /* node_binary_tree.h */,
-				13AA22E6213F3084008DAE8C /* binary_tree.h */,
-				13AA22E5213F2CC0008DAE8C /* test_Lab2.h */,
+				13CBBFA021474FD700B40CA9 /* postToTree.h */,
+				13AA22E7213F3444008DAE8C /* bNode.h */,
+				13AA22E6213F3084008DAE8C /* bTree.h */,
+				13CBBF9D21470AC900B40CA9 /* nNode.h */,
+				13CBBF9F21471E1800B40CA9 /* nTree.h */,
+				13AA22E5213F2CC0008DAE8C /* test_Lab3.h */,
 			);
-			path = EDA_Lab2;
+			path = EDA_Lab3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

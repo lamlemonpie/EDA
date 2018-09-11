@@ -8,9 +8,9 @@
 
 #include <iostream>
 
-#include "EDA_Tarea1/test_Tarea1.h"
 #include "EDA_Lab1/test_Lab1.h"
 #include "EDA_Lab2/test_Lab2.h"
+#include "EDA_Lab3/test_Lab3.h"
 
 using namespace std;
 
@@ -47,8 +47,9 @@ int main(int argc, const char * argv[]) {
     //test_RadixList(lista);
     
     //EDA_Lab2
-    test_Binary_Tree();
-    
+    //test_BTree();
+    testNTree();
+    //testPostToTree();
     
     return 0;
 }
