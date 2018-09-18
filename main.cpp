@@ -11,6 +11,7 @@
 #include "EDA_Lab1/test_Lab1.h"
 #include "EDA_Lab2/test_Lab2.h"
 #include "EDA_Lab3/test_Lab3.h"
+#include "EDA_Lab4/test_Lab4.h"
 
 using namespace std;
 
@@ -20,7 +21,7 @@ int main(int argc, const char * argv[]) {
     
     cout << "ESTRUCTURAS DE DATOS" << endl;
     
-    //EDA_Tarea1
+    //EDA_Lab1
     //test_Lista_Puntero();
     //test_Cola_Puntero();
     //test_Pila_Puntero();
@@ -29,7 +30,7 @@ int main(int argc, const char * argv[]) {
     //test_Cola_Array();
     //test_Pila_Array();
     
-    //EDA_Lab1
+    //EDA_Lab2
     //vect a = {82,31,53,18,27,46,17,38,47,212};
     //vect b = {82,31,53,18,27,46,17,38,10,212};
     //vect c = {69,98,77,26,95,124,83,52,31,50,10};
@@ -46,10 +47,16 @@ int main(int argc, const char * argv[]) {
     //lista.insert_Back(27);
     //test_RadixList(lista);
     
-    //EDA_Lab2
+    //EDA_Lab3
     //test_BTree();
-    testNTree();
+    //testNTree();
     //testPostToTree();
+    
+    
+    //EDA_Lab4
+    //test_frecuency("EDA_Lab4/mobydick.txt");
+    //test_frecuency("EDA_Lab4/test.txt");
+    test_frecuency("EDA_Lab4/test.txt","EDA_Lab4/test.txt","EDA_Lab4/encrypted.txt","EDA_Lab4/decrypted.txt");
     
     return 0;
 }

@@ -32,6 +32,9 @@
 		136C8E6F2129180900211DCD /* queue_pointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue_pointer.h; sourceTree = "<group>"; };
 		136C8E702129181300211DCD /* queue_array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue_array.h; sourceTree = "<group>"; };
 		136C8E712129191C00211DCD /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		1377504F215068BC00824D0F /* huffmanNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = huffmanNode.h; sourceTree = "<group>"; };
+		13775050215168B500824D0F /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		13775051215186BA00824D0F /* test2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test2.txt; sourceTree = "<group>"; };
 		13A61F73213D954900C05C4E /* radix_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = radix_sort.h; sourceTree = "<group>"; };
 		13A61F74213DD45400C05C4E /* test_Lab1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab1.h; sourceTree = "<group>"; };
 		13A61F75213DD4DC00C05C4E /* test_Lab2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab2.h; sourceTree = "<group>"; };
@@ -41,6 +44,9 @@
 		13CBBF9D21470AC900B40CA9 /* nNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nNode.h; sourceTree = "<group>"; };
 		13CBBF9F21471E1800B40CA9 /* nTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nTree.h; sourceTree = "<group>"; };
 		13CBBFA021474FD700B40CA9 /* postToTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = postToTree.h; sourceTree = "<group>"; };
+		13CBBFA221486C3B00B40CA9 /* huffmanCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = huffmanCoding.h; sourceTree = "<group>"; };
+		13CBBFA321486C4300B40CA9 /* test_Lab4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab4.h; sourceTree = "<group>"; };
+		13CBBFA4214874DB00B40CA9 /* mobydick.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mobydick.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 				136C8E63212917D100211DCD /* EDA_Lab1 */,
 				132A4932212EABD100219A54 /* EDA_Lab2 */,
 				13AA22E4213F2CA7008DAE8C /* EDA_Lab3 */,
+				13CBBFA121486A1300B40CA9 /* EDA_Lab4 */,
 				136C8E62212917D100211DCD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +115,19 @@
 				13AA22E5213F2CC0008DAE8C /* test_Lab3.h */,
 			);
 			path = EDA_Lab3;
+			sourceTree = "<group>";
+		};
+		13CBBFA121486A1300B40CA9 /* EDA_Lab4 */ = {
+			isa = PBXGroup;
+			children = (
+				13775051215186BA00824D0F /* test2.txt */,
+				13775050215168B500824D0F /* test.txt */,
+				13CBBFA4214874DB00B40CA9 /* mobydick.txt */,
+				13CBBFA221486C3B00B40CA9 /* huffmanCoding.h */,
+				1377504F215068BC00824D0F /* huffmanNode.h */,
+				13CBBFA321486C4300B40CA9 /* test_Lab4.h */,
+			);
+			path = EDA_Lab4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
