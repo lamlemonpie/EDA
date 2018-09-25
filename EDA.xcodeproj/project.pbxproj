@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		133CAC86215AB0090032FC71 /* dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
 		136C8E61212917D100211DCD /* EDA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EDA; sourceTree = BUILT_PRODUCTS_DIR; };
 		136C8E64212917D100211DCD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		136C8E6B212917E600211DCD /* list_pointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = list_pointer.h; sourceTree = "<group>"; };
@@ -35,6 +36,10 @@
 		1377504F215068BC00824D0F /* huffmanNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = huffmanNode.h; sourceTree = "<group>"; };
 		13775050215168B500824D0F /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		13775051215186BA00824D0F /* test2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test2.txt; sourceTree = "<group>"; };
+		137750542151AB6300824D0F /* test_Lab5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab5.h; sourceTree = "<group>"; };
+		137750552151AD2200824D0F /* spanishDictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spanishDictionary.txt; sourceTree = "<group>"; };
+		137750562151B24100824D0F /* hashNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hashNode.h; sourceTree = "<group>"; };
+		137750572151B24900824D0F /* hashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hashTable.h; sourceTree = "<group>"; };
 		13A61F73213D954900C05C4E /* radix_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = radix_sort.h; sourceTree = "<group>"; };
 		13A61F74213DD45400C05C4E /* test_Lab1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab1.h; sourceTree = "<group>"; };
 		13A61F75213DD4DC00C05C4E /* test_Lab2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab2.h; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 				132A4932212EABD100219A54 /* EDA_Lab2 */,
 				13AA22E4213F2CA7008DAE8C /* EDA_Lab3 */,
 				13CBBFA121486A1300B40CA9 /* EDA_Lab4 */,
+				137750532151AAC800824D0F /* EDA_Lab5 */,
 				136C8E62212917D100211DCD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +108,18 @@
 				13A61F74213DD45400C05C4E /* test_Lab1.h */,
 			);
 			path = EDA_Lab1;
+			sourceTree = "<group>";
+		};
+		137750532151AAC800824D0F /* EDA_Lab5 */ = {
+			isa = PBXGroup;
+			children = (
+				137750552151AD2200824D0F /* spanishDictionary.txt */,
+				137750542151AB6300824D0F /* test_Lab5.h */,
+				137750562151B24100824D0F /* hashNode.h */,
+				137750572151B24900824D0F /* hashTable.h */,
+				133CAC86215AB0090032FC71 /* dictionary.h */,
+			);
+			path = EDA_Lab5;
 			sourceTree = "<group>";
 		};
 		13AA22E4213F2CA7008DAE8C /* EDA_Lab3 */ = {

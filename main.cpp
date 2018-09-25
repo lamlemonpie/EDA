@@ -12,6 +12,7 @@
 #include "EDA_Lab2/test_Lab2.h"
 #include "EDA_Lab3/test_Lab3.h"
 #include "EDA_Lab4/test_Lab4.h"
+#include "EDA_Lab5/test_Lab5.h"
 
 using namespace std;
 
@@ -56,7 +57,10 @@ int main(int argc, const char * argv[]) {
     //EDA_Lab4
     //test_frecuency("EDA_Lab4/mobydick.txt");
     //test_frecuency("EDA_Lab4/test.txt");
-    test_frecuency("EDA_Lab4/test.txt","EDA_Lab4/test.txt","EDA_Lab4/encrypted.txt","EDA_Lab4/decrypted.txt");
+    //test_frecuency("EDA_Lab4/test.txt","EDA_Lab4/test.txt","EDA_Lab4/encrypted.txt","EDA_Lab4/decrypted.txt");
+    
+    //EDA_Lab5
+    test_dictionary("EDA_Lab5/spanishDictionary.txt","EDA_Lab5/test.txt");
     
     return 0;
 }
