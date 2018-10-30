@@ -20,10 +20,11 @@ class bTree {
     bNode<T> * m_pRoot;
 public:
     bTree();
-    bool Add(T data);
-    void generateDot(string &dot, bNode<T> * node);
-    void getDot();
-    void showDot();
+    bool      Add(T data);
+    void      generateDot(string &dot, bNode<T> * node);
+    void      getDot();
+    void      showDot();
+    bNode<T>* root();
 };
 template<class T>
 bTree<T>::bTree(){
@@ -76,6 +77,11 @@ void bTree<T>::showDot(){
     system("atom tree.dot");
     system("dot -Tpng tree.dot -o tree.png");
     system("open tree.png");
+}
+
+template<class T>
+bNode<T> * bTree<T>::root(){
+    return m_pRoot;
 }
 
 #endif /* bTree_h */

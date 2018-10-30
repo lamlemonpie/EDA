@@ -40,12 +40,18 @@
 		137750552151AD2200824D0F /* spanishDictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spanishDictionary.txt; sourceTree = "<group>"; };
 		137750562151B24100824D0F /* hashNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hashNode.h; sourceTree = "<group>"; };
 		137750572151B24900824D0F /* hashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hashTable.h; sourceTree = "<group>"; };
+		137FD049216D277F003CC4F0 /* playground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = playground.h; sourceTree = "<group>"; };
+		137FD04A216D29C3003CC4F0 /* test_Playground.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Playground.h; sourceTree = "<group>"; };
 		13A61F73213D954900C05C4E /* radix_sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = radix_sort.h; sourceTree = "<group>"; };
 		13A61F74213DD45400C05C4E /* test_Lab1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab1.h; sourceTree = "<group>"; };
 		13A61F75213DD4DC00C05C4E /* test_Lab2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab2.h; sourceTree = "<group>"; };
 		13AA22E5213F2CC0008DAE8C /* test_Lab3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab3.h; sourceTree = "<group>"; };
 		13AA22E6213F3084008DAE8C /* bTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bTree.h; sourceTree = "<group>"; };
 		13AA22E7213F3444008DAE8C /* bNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bNode.h; sourceTree = "<group>"; };
+		13ACAB642188C0B90045A22A /* kmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kmp.h; sourceTree = "<group>"; };
+		13ACAB652188C0D30045A22A /* boyer-moore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "boyer-moore.h"; sourceTree = "<group>"; };
+		13B49994217FCF5400AA98C4 /* bruteForce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bruteForce.h; sourceTree = "<group>"; };
+		13B49995217FCF6000AA98C4 /* test_Lab7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_Lab7.h; sourceTree = "<group>"; };
 		13CBBF9D21470AC900B40CA9 /* nNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nNode.h; sourceTree = "<group>"; };
 		13CBBF9F21471E1800B40CA9 /* nTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nTree.h; sourceTree = "<group>"; };
 		13CBBFA021474FD700B40CA9 /* postToTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = postToTree.h; sourceTree = "<group>"; };
@@ -83,6 +89,8 @@
 				13AA22E4213F2CA7008DAE8C /* EDA_Lab3 */,
 				13CBBFA121486A1300B40CA9 /* EDA_Lab4 */,
 				137750532151AAC800824D0F /* EDA_Lab5 */,
+				137FD048216D274D003CC4F0 /* Playground */,
+				13B49993217FCF1400AA98C4 /* EDA_Lab7 */,
 				136C8E62212917D100211DCD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +130,15 @@
 			path = EDA_Lab5;
 			sourceTree = "<group>";
 		};
+		137FD048216D274D003CC4F0 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				137FD049216D277F003CC4F0 /* playground.h */,
+				137FD04A216D29C3003CC4F0 /* test_Playground.h */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
 		13AA22E4213F2CA7008DAE8C /* EDA_Lab3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +150,17 @@
 				13AA22E5213F2CC0008DAE8C /* test_Lab3.h */,
 			);
 			path = EDA_Lab3;
+			sourceTree = "<group>";
+		};
+		13B49993217FCF1400AA98C4 /* EDA_Lab7 */ = {
+			isa = PBXGroup;
+			children = (
+				13B49994217FCF5400AA98C4 /* bruteForce.h */,
+				13ACAB652188C0D30045A22A /* boyer-moore.h */,
+				13ACAB642188C0B90045A22A /* kmp.h */,
+				13B49995217FCF6000AA98C4 /* test_Lab7.h */,
+			);
+			path = EDA_Lab7;
 			sourceTree = "<group>";
 		};
 		13CBBFA121486A1300B40CA9 /* EDA_Lab4 */ = {

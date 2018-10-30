@@ -8,19 +8,24 @@
 
 #include <iostream>
 
+#include "Playground/test_Playground.h"
+
 #include "EDA_Lab1/test_Lab1.h"
 #include "EDA_Lab2/test_Lab2.h"
 #include "EDA_Lab3/test_Lab3.h"
 #include "EDA_Lab4/test_Lab4.h"
 #include "EDA_Lab5/test_Lab5.h"
+#include "EDA_Lab7/test_Lab7.h"
+
 
 using namespace std;
-
-
 
 int main(int argc, const char * argv[]) {
     
     cout << "ESTRUCTURAS DE DATOS" << endl;
+    
+    //Playground
+    //test_playground();
     
     //EDA_Lab1
     //test_Lista_Puntero();
@@ -60,7 +65,13 @@ int main(int argc, const char * argv[]) {
     //test_frecuency("EDA_Lab4/test.txt","EDA_Lab4/test.txt","EDA_Lab4/encrypted.txt","EDA_Lab4/decrypted.txt");
     
     //EDA_Lab5
-    test_dictionary("EDA_Lab5/spanishDictionary.txt","EDA_Lab5/test.txt");
+    //test_dictionary("EDA_Lab5/spanishDictionary.txt","EDA_Lab5/test.txt");
+    
+    
+    //EDA_Lab7
+    test_bruteForce("maravillado", "villa");
+    test_boyermoore("maravillado", "villa");
+    test_kmp("maravillado", "villa");
     
     return 0;
 }
